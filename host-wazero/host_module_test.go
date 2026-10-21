@@ -10,10 +10,10 @@ import (
 	"github.com/tetratelabs/wazero/imports/wasi_snapshot_preview1"
 )
 
-//go:embed test\.wasm
+//go:embed test.go.wasm
 var testwasm []byte
 
-//go:embed test_zig\.wasm
+//go:embed test.zig.wasm
 var testzigwasm []byte
 
 func TestModule(t *testing.T) {
